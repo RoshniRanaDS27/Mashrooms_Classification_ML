@@ -38,17 +38,17 @@ The Random Forest model, which demonstrated the best accuracy, is retrained on t
 A user-friendly interface is developed using the Tkinter library. This GUI allows users to input mushroom characteristics and receive real-time classification results.
 
 # Final Insights or Conclusion : Why Random Forest Performed Best?
-## 1. Handling Categorical Features:
-The dataset is composed of categorical variables (e.g., cap shape, gill color), and Random Forest is highly effective at capturing relationships within categorical data.
+1. Handling Categorical Features:  
+The dataset is composed of categorical variables (e.g., cap shape, gill color), and Random Forest is highly effective at capturing relationships within categorical data.  
+  
+2. Capturing Complex Patterns:  
+The classification problem likely involves non-linear and hierarchical relationships. Random Forest, being an ensemble method, can recognize intricate patterns better than simpler models like Logistic Regression or SVM.  
+  
+3. Balanced Target Classes:      
+If the dataset has a nearly equal distribution of edible and poisonous mushrooms, Random Forest’s ensemble approach ensures a balanced classification without bias toward a specific category.  
 
-## 2. Capturing Complex Patterns:
-The classification problem likely involves non-linear and hierarchical relationships. Random Forest, being an ensemble method, can recognize intricate patterns better than simpler models like Logistic Regression or SVM.
-
-## 3. Balanced Target Classes:
-If the dataset has a nearly equal distribution of edible and poisonous mushrooms, Random Forest’s ensemble approach ensures a balanced classification without bias toward a specific category.
-
-## 4. Robustness to Noise:
+4. Robustness to Noise:  
 Unlike single decision trees, Random Forest is resistant to overfitting and performs well even with noisy data, leading to more reliable test results.
 
-## 5. Impact of PCA:
+5. Impact of PCA:  
 Applying PCA reduced the dataset to 7 principal components while retaining 85% of the original variance. This dimensionality reduction enhanced computational efficiency and helped Random Forest focus on significant patterns, improving accuracy.
